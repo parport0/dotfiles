@@ -1,0 +1,5 @@
+--colors=line:fg:green
+--colors=line:style:bold
+--colors=path:fg:yellow
+--colors=path:style:bold
+--colors=match:fg:red

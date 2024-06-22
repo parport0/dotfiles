@@ -1,0 +1,51 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[credential]
+	helper = cache --timeout=267840
+#[url "ssh://"]
+#	insteadOf = https://
+[user]
+	name = Elvira Khabirova
+[pull]
+	rebase = true
+[color]
+	ui = true
+[transfer]
+	fsckobjects = false
+[fetch]
+	fsckobjects = false
+[receive]
+	fsckObjects = false
+[diff]
+	mnemonicprefix = true
+[branch]
+	autosetupmerge = true
+	autosetuprebase = always
+[rerere]
+	enabled = true
+[merge]
+	stat = true
+[rebase]
+	stat = true
+[pull]
+	rebase = true
+[alias]
+	graph = log --graph --oneline --all
+	# for repos where seeing the committer name is helpful too -- like the kernel
+	# logp = log --format='%C(yellow)%h %C(green)%as %C(red)%cs %C(cyan)%aL %C(blue bold)%cL %C(white bold)%s%C(red bold)%d'
+	treee = log --format='%C(yellow)%h %C(green)%as %C(red)%cs %C(cyan)%aL %C(blue bold)%cL %C(white bold)%s%C(red bold)%d' --graph --all
+	logp = log --format='%C(yellow)%h %C(green)%as %C(red)%cs %C(cyan)%aE %C(white bold)%s%C(red bold)%d'
+	logpp = log --format='%C(yellow)%h %C(green)%as %C(red)%cs %C(cyan)%aL %C(blue bold)%cL %C(white bold)%s%C(red bold)%d'
+	tree = log --format='%C(yellow)%h %C(green)%as %C(red)%cs %C(cyan)%aE %C(white bold)%s%C(red bold)%d' --graph --all
+	lg = log --stat
+	sh = show --patch-with-stat --color-moved --compact-summary
+	cp = cherry-pick -sx
+	co = checkout
+	df = diff --patch-with-stat --color-moved
+[grep]
+	lineNumber = true
+[init]
+	defaultBranch = main
+[log]
+	decorate = short
